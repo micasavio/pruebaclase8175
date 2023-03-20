@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+    <h1>clase repaso</h1>
+
+</header>
+    <div>
+        <img src="totoro4.jpg" alt="totoro">
+    </div> !-- ejemplo de formulario
+
+       <form class="form">
+        <div class="form_container">
+            <h2 class="form_title">Solicitud de Cotizacíon</h2>
+            <input type="text" class="form_input" placeholder="nombre:"name=name><br><br>
+            <input type="email" class="form_input" placeholder="email" name="_replayto"><br><br>
+            <textarea class="form_input from_input--message" placeholder="mensaje:"name="message"></textarea> <br><br>
+            <input type="submit" value="enviar" class="form_cta">
+
+        </div>
+    </div>
+  // polindromo capicua ejercicio clase 3
+    let oracion = prompt('inserte una oración').replace(/[\W_]/g, "").toLowerCase();
+    let reversa = oracion.split("").reverse().join("");     
+    //console.log(reversa === oracion ? "es palindromo" : "no es palindromo")   
+    if (reversa === oracion)
+    console.log('es capicua')
+    else
+    console.log('no es capicua')  
+  }
+ </div>
+</body>
+</html>
